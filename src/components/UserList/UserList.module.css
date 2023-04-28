@@ -1,0 +1,32 @@
+.UserList {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loadMoreButton {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  background-color: #5a5dff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: #3d3d99;
+}

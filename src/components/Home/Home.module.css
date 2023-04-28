@@ -1,0 +1,89 @@
+.mainContainer {
+  width: 75%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  text-align: center;
+  background-color: #673ab791;
+  /* padding: 20px; */
+  border-radius: 10px;
+  padding-top: 20px;
+  z-index: 1;
+  align-items: center;
+  color: white;
+}
+
+.title,
+.subTitle {
+  text-align: center;
+}
+.subTitle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+.link {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  background-color: #5a5dff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #5cd3a8;
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+}
+.screenTweet {
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mainContainer {
+    width: 90%;
+    gap: 5px;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2.subTitle {
+    font-size: 20px;
+  }
+}
+
+/* *********************************** */
+.wrapperHomePage {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 550px) {
+  .wrapperHomePage {
+    padding: 25px;
+  }
+}
+
+.homeTitle {
+  padding-left: 15px;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-align: center;
+
+  @media screen and (max-width: 550px) {
+    font-size: 56px;
+  }
+}
+
+
