@@ -1,7 +1,7 @@
 {
   "name": "pizzastyle",
   "version": "0.1.0",
-  "homepage": "https://qweeqer.github.io/PizzaStyle",
+  "homepage": "https://qweeqer.github.io/PizzaStyle/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
