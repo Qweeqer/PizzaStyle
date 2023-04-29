@@ -4,12 +4,16 @@
     <meta charset="utf-8" />
     <title>Single Page Apps for GitHub Pages</title>
     <script type="text/javascript">
-      (function() {
+      (function () {
         var path = window.location.pathname;
         var segments = path.split("/");
-        var newPath = segments.slice(0, -1).join("/") + "/index.html" + window.location.search + window.location.hash;
+        var newPath =
+          segments.slice(0, -1).join("/") +
+          "/index.html#" +
+          path +
+          window.location.search +
+          window.location.hash;
 
-        sessionStorage.setItem("redirect", path + window.location.search + window.location.hash);
         window.location.replace(newPath);
       })();
     </script>
