@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ButtonAppBar />}>
             <Route index element={<Pizzas />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="cart" element={<Cart />} />
           </Route>
           <Route path="*" element={<Navigate to="/PizzaStyle/" />} />
         </Routes>
