@@ -11,7 +11,7 @@ export default function CartPage() {
   return (
     <Container className={s.cartContainer}>
       {cart.length === 0 ? (
-        <Typography variant="h3" align="center" >
+        <Typography variant="h3" align="center">
           Please, choose pizza{" "}
           <Link to="/" className={s.linkToHome}>
             here
