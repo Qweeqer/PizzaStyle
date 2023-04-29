@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import { Loader } from "./components/Loader/Loader";
 import ButtonAppBar from "./components/AppBarWithCartIcon/AppBarWithCartIcon";
@@ -15,9 +15,8 @@ function App() {
           <Route path="/" element={<ButtonAppBar />}>
             <Route index exact="true" element={<Pizzas />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="*" element={<Navigate to="/PizzaStyle" />} />
           </Route>
-          <Route path="/cart/*" element={<PageNotFound />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
