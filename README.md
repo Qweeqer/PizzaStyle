@@ -24,11 +24,11 @@ production environment.
 Thank you for taking the time to read this README file. If you have any
 questions or issues, feel free to open an issue in this repository.
 
-Link to the live page - https://qweeqer.github.io/GOITtestTask/
+Link to the live page - https://qweeqer.github.io/PizzaStyle/
 
 The page template:
 
-![page template](./src/images/screenTweet.png)
+![page template](./src/images/screenPizzaStyles.png)
 
 The following technologies were used in the development of the project:
 
