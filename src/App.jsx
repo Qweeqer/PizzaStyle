@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import { Loader } from "./components/Loader/Loader";
@@ -8,6 +9,13 @@ import PageNotFound from "./page/PageNotFound/PageNotFound.jsx";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    const redirectPath = sessionStorage.getItem("redirect");
+    if (redirectPath) {
+      sessionStorage.removeItem("redirect");
+      window.history.replaceState(null, "", redirectPath);
+    }
+  }, []);
   return (
     <BrowserRouter basename="/PizzaStyle">
       <Suspense fallback={<Loader />}>
