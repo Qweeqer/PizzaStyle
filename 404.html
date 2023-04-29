@@ -6,14 +6,11 @@
     <script type="text/javascript">
       (function () {
         var path = window.location.pathname;
-        var segments = path.split("/");
-        var newPath =
-          segments.slice(0, -1).join("/") +
-          "/index.html#" +
-          path +
-          window.location.search +
-          window.location.hash;
-
+        var newPath = "/PizzaStyle/index.html";
+        sessionStorage.setItem(
+          "redirect",
+          path + window.location.search + window.location.hash
+        );
         window.location.replace(newPath);
       })();
     </script>
