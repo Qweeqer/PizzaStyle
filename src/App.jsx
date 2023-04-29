@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Loader } from "./components/Loader/Loader";
 import ButtonAppBar from "./components/AppBarWithCartIcon/AppBarWithCartIcon";
-import Pizzas from "./page/Pizza/Pizza.jsx";
-import Cart from "./page/Cart/Cart.jsx";
-// import PageNotFound from "./page/PageNotFound/PageNotFound.jsx";
+
 import "./App.css";
 
-function App() {
+const Pizzas = lazy(() => import("./page/Pizza/Pizza"));
+const Cart = lazy(() => import("./page/Cart/Cart"));
+
+const App = () => {
   return (
     <BrowserRouter basename="/PizzaStyle/">
       <Suspense fallback={<Loader />}>
@@ -21,6 +22,6 @@ function App() {
       </Suspense>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
