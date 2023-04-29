@@ -59,9 +59,11 @@
   margin-left: 5px;
 }
 
-.cartSumNumber {
+
+span.cartSumNumber {
   font-size: 24px;
   font-weight: 700;
+  
 }
 /**********/
 span {
