@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { useEffect } from "react";
 import { Suspense } from "react";
 import { Loader } from "./components/Loader/Loader";
 import ButtonAppBar from "./components/AppBarWithCartIcon/AppBarWithCartIcon";
@@ -9,14 +8,6 @@ import Cart from "./page/Cart/Cart.jsx";
 import "./App.css";
 
 function App() {
-  useEffect(() => {
-    const redirectPath = sessionStorage.getItem("redirect");
-    if (redirectPath) {
-      sessionStorage.removeItem("redirect");
-      window.history.replaceState(null, "", redirectPath);
-    }
-  }, []);
-
   return (
     <BrowserRouter basename="/PizzaStyle/">
       <Suspense fallback={<Loader />}>
