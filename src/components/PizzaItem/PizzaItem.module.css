@@ -6,7 +6,7 @@
   box-shadow: 0px 10px 13px -7px #000000;
 }
 .cardMedia{
-    height: 400px;
+    height: 290px;
 }
 .cardMedia:hover{
      transform: scale(1.05);
