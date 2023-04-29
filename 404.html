@@ -45,6 +45,10 @@
           l.hash
       );
     </script>
+    <script>
+      sessionStorage.redirect = location.pathname.slice(1) + location.search + location.hash;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/PizzaStyle'" />
   </head>
   <body></body>
 </html>
