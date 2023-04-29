@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import Button from "../../components/Button/Button";
 import s from "./PageNotFound.module.css";
+import { Box } from "@mui/material";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
@@ -11,10 +12,10 @@ const PageNotFound = () => {
   };
 
   return (
-    <div className={s.container}>
-      <div className={s.background}>
+    <Box className={s.container}>
+      <Box className={s.background}>
         <h2 className={s.title}>Вибачте, але тут немає Піци</h2>
-        <div className={s.img}></div>
+        <Box className={s.img}></Box>
         <p className={s.text}>
           Піца є дуже популярною стравою по всьому світу і може бути приготована
           в різних стилях та варіаціях, включаючи класичні нітсццу або
@@ -25,8 +26,8 @@ const PageNotFound = () => {
         </p>
 
         <Button onClick={handleBtnClick}>Повернутись до Піци</Button>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
