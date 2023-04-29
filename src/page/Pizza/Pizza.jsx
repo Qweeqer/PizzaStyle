@@ -7,11 +7,13 @@ import CenteredTitleImage from "../../components/CenteredTitleImage/CenteredTitl
 export default function Pizzas() {
   const pizzas = useSelector((state) => state.pizzaStyle.pizzas);
   return (
-    <Container>
-        <CenteredTitleImage />
-      <Grid container spacing={{ xs: 2, md: 3 }}>
-        <PizzaItem pizzas={pizzas} />
-      </Grid>
-    </Container>
+    <>
+      <CenteredTitleImage />
+      <Container>
+        <Grid container spacing={{ xs: 2, md: 3 }}>
+          <PizzaItem pizzas={pizzas} />
+        </Grid>
+      </Container>
+    </>
   );
 }
