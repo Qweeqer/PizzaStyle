@@ -9,15 +9,15 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/PizzaStyle/">
+    <BrowserRouter basename="/PizzaStyle">
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<ButtonAppBar />}>
             <Route index exact="true" element={<Pizzas />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="*" element={<Navigate to="/PizzaStyle" />} />
           </Route>
-            <Route path="/cart/*" element={<PageNotFound />} />
+          <Route path="/cart/*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
