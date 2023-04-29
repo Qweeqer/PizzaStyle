@@ -1,0 +1,11 @@
+.cartContainer{
+    margin-top: 20px;
+}
+a.linkToHome{
+    color: #1976d2;
+    transition: color 0.5s ease;
+}
+a.linkToHome:hover{
+    color: yellow;
+    transition: color 0.5s ease;
+}
