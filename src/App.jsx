@@ -17,7 +17,7 @@ const App = () => {
             <Route index element={<Pizzas />} />
             <Route path="cart" element={<Cart />} />
           </Route>
-          <Route path="*" element={<Navigate to="/PizzaStyle/" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
