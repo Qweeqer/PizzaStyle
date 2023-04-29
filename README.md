@@ -35,12 +35,7 @@ The following technologies were used in the development of the project:
 - html/css, svg, responsive images;
 - js, react, react components.
 
-**********************************\*\***********************************
-## Variables
-Creating a new project at mockapi.io
-Creating a new fale .env and adding Variables REACT_APP_MOCKAPI_URL for example:
-REACT_APP_MOCKAPI_URL=https://YOU_MOCKAPI_PROJECT_ID.mockapi.io/api/v2/users
-or add secrets variables to your Repository variables on github 
+********************************************************************
 
 ## Available Scripts
 
