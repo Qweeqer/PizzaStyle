@@ -1,4 +1,4 @@
-import { Navigate, Route, Router, Routes } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import { Loader } from "./components/Loader/Loader";
 import ButtonAppBar from "./components/AppBarWithCartIcon/AppBarWithCartIcon";
