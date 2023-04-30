@@ -5,7 +5,7 @@ import ButtonAppBar from "../components/AppBarWithCartIcon/AppBarWithCartIcon";
 
 const Pizzas = lazy(() => import("../page/Pizza/Pizza"));
 const Cart = lazy(() => import("../page/Cart/Cart"));
-const PageNotFound = lazy(() => import("../page/PageNotFound/PageNotFound"));
+// const PageNotFound = lazy(() => import("../page/PageNotFound/PageNotFound"));
 const PagesRoutes = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -15,7 +15,6 @@ const PagesRoutes = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <Route path="*" element={<PageNotFound />} />
     </Suspense>
   );
 };
