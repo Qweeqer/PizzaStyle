@@ -30,7 +30,7 @@ export default function MakeOrder() {
           onClick={handleMakeOrder}
           disabled={!canMakeOrder}
         >
-          Place Order
+          Make an order
         </Button>
         {!canMakeOrder && (
           <Typography color="error">
