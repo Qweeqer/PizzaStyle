@@ -40,7 +40,7 @@ const totalSum = cart.reduce(
           <NavLink
             className={({ isActive }) => (isActive ? s.activeLink : s.link)}
             exact="true"
-            to="/"
+            to="/PizzaStyle/"
           >
             <Typography className="logoTitle" variant="p" body1="span">
               PizzaStyle
@@ -50,7 +50,7 @@ const totalSum = cart.reduce(
         <NavLink
           id="cart"
           className={({ isActive }) => (isActive ? s.activeLink : s.link)}
-          to="/cart"
+          to="/PizzaStyle/cart"
           style={{ marginRight: "20px" }}
         >
           <Typography>

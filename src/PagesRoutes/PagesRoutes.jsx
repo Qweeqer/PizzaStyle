@@ -11,9 +11,9 @@ const PagesRoutes = () => {
     <Suspense fallback={<Loader />}>
       <ButtonAppBar />
       <Routes>
-        <Route path="/" element={<Pizzas />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/PizzaStyle/" element={<Pizzas />} />
+        <Route path="/PizzaStyle/cart" element={<Cart />} />
+        <Route path="*" element={<Navigate to="/PizzaStyle/" />} />
       </Routes>
     </Suspense>
   );
