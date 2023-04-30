@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 import { Loader } from "../components/Loader/Loader";
 import ButtonAppBar from "../components/AppBarWithCartIcon/AppBarWithCartIcon";
@@ -13,8 +13,9 @@ const PagesRoutes = () => {
       <Routes>
         <Route path="/" element={<Pizzas />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Route path="*" element={<PageNotFound />} />
     </Suspense>
   );
 };
