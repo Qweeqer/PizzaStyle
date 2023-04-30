@@ -1,20 +1,52 @@
 Hello and welcome to this GitHub repository! This project was created with
 [Create React App](https://github.com/facebook/create-react-app) and is a test
-task from GoIt.
+task from SoftRyzen.
 
-The application is written in React, and the styles are implemented using
-module.css. The goal of this task is to create a user card and add interactivity
-when the user clicks on the Follow button.
+Create a web application "PizzaStyle".
 
-According to the layout, the user card should include an avatar, the number of
-followers, the number of tweets, and a Follow button. When the user clicks on
-the Follow button, the text on the button changes to Following, and the color of
-the button changes. The number of followers should also increase by one. The
-final result of the user's actions should be saved when the page is refreshed.
+Technologies:
+⭐ React
+⭐ Redux/Redux Toolkit
+⭐ For styling, use module.css or styled-components. You can also use any UI library (React Bootstrap, Tailwind, or Material UI).
 
-If the user clicks on the button again, the text and color of the button should
-return to their original state, and the number of followers should decrease by
-one.
+Pages:
+⭐ Pizza
+⭐ Cart
+
+Header:
+⭐The header contains the PizzaStyle website logo and navigation. By default, we are on the Pizza page.
+⭐If there are added items in the cart, a corresponding number appears next to the cart. If one pizza is added, the number 1 should light up; if 2 pizzas are added, the number 2 should light up accordingly.
+
+PizzaPage:
+⭐The page contains a list of product cards.
+⭐Each card contains the product image, title, description, price, and "Add to cart" button.
+⭐When you press the "Add to cart" button, 2 buttons appear: "-" (minus) and "+" (plus). The number next to Cart in the header also updates.
+⭐The "-" (minus) button reduces the quantity of this product in the cart. If there was only one product in the cart, pressing "-" returns the product card to its initial state (the "-" and "+" buttons are replaced with the "Add to cart" button). The number next to Cart in the header also updates or disappears.
+⭐The "+" (plus) button increases the quantity of this product in the cart. The number next to Cart in the header updates accordingly.
+
+CartPage:
+⭐If the cart is empty, the message "Please, choose pizza here" is displayed, where "here" is a link to the PizzaPage.
+⭐If there are items in the cart, the corresponding product cards are displayed.
+⭐Each card contains an image, title, description, "-" (minus) button, the quantity of this product in the cart, "+" (plus) button, and the price of this product.
+⭐Below the product cards is the text "Total: {Sum of all products} UAH."
+⭐Even further below is the "Make an order" button. When you click this button, the cart is completely cleared, and the message "Please, choose pizza here" appears instead of the cards and sum.
+
+Completion criteria:
+⭐The code is divided into separate components.
+⭐The code should be clean, with preserved formatting. It is recommended to use ESLint/Prettier.
+⭐The active link (on which page we are) should be underlined.
+
+Additional, but not mandatory tasks:
+⭐Use the CSS Grid algorithm for product card layout.
+⭐Add a "Remove" button to each product card in the cart (which can be used to remove the corresponding product from the cart).
+⭐The layout is adaptive and cross-browser - mobile from 320px, tablet from 768px, desktop from 1280px.
+⭐Use the Mobile-first approach.
+
+Hover effects:
+1.Buttons have reverse colors.
+2.Product cards on hover:
+⭐The product image enlarges (not the card itself) - the image should not go beyond its container.
+⭐A shadow appears around the card.
 
 To get started with this project, clone the repository to your local machine,
 install the necessary dependencies, and then run the project using the command
