@@ -55,7 +55,9 @@ const totalSum = cart.reduce(
         >
           <Typography>
             <Badge className={s.badge} color="secondary" badgeContent={cartSum}>
-              <ShoppingCart sx={{ width: "40px", height: "40px" }} />
+              <ShoppingCart
+                className={s.cartIcon}
+              />
               <Typography variant="p" body1="span" className={s.cartSum}>
                 <Typography
                   variant="p"
