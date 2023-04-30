@@ -12,7 +12,7 @@ const PagesRoutes = () => {
       <ButtonAppBar />
       <Routes>
         <Route path="/" element={<Pizzas />} />
-        <Route path="cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Suspense>
