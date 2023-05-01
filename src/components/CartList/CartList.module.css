@@ -47,7 +47,7 @@ p.description {
 }
 @media screen and (min-width: 1280px) {
   div.imageContainer {
-    height: 600px;
+    height: 400px;
     overflow: hidden;
     position: relative;
   }
