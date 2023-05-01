@@ -69,9 +69,6 @@ span {
   font-weight: 500;
   align-items: center;
 }
-span.logoTitle {
-  margin-left: 10%;
-}
 
 .link {
   display: inline-block;

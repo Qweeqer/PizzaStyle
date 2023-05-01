@@ -9,3 +9,8 @@ a.linkToHome:hover{
     color: yellow;
     transition: color 0.5s ease;
 }
+@media screen and (min-width: 1280px) {
+div.cartContainer{
+    max-width: 80%;
+}
+}

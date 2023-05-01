@@ -32,9 +32,23 @@ p.description {
   margin-bottom: 5px;
 }
 .cardActions {
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  div.imageContainer {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1280px) {
+  div.imageContainer {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+  }
 }

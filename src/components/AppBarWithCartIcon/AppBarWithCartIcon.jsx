@@ -42,7 +42,7 @@ const totalSum = cart.reduce(
             exact="true"
             to="/"
           >
-            <Typography className="logoTitle" variant="p" body1="span">
+            <Typography className={s.logoTitle} variant="p" body1="span">
               PizzaStyle
             </Typography>
           </NavLink>
@@ -55,9 +55,7 @@ const totalSum = cart.reduce(
         >
           <Typography>
             <Badge className={s.badge} color="secondary" badgeContent={cartSum}>
-              <ShoppingCart
-                className={s.cartIcon}
-              />
+              <ShoppingCart className={s.cartIcon} />
               <Typography variant="p" body1="span" className={s.cartSum}>
                 <Typography
                   variant="p"
