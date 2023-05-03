@@ -8,8 +8,10 @@ import {
   CardContent,
   Typography,
   CardActions,
+  Box,
 } from "@mui/material";
 import s from "./PizzaItem.module.css";
+
 export default function PizzaItem({ pizzas }) {
   const cart = useSelector((state) => state.pizzaStyle.cart);
   return (
@@ -19,14 +21,15 @@ export default function PizzaItem({ pizzas }) {
         return (
           <Grid item xs={12} sm={6} md={4} key={id}>
             <Card className={s.card}>
-              <CardMedia className={s.imageContainer}>
+              <Box className={s.imageContainer}>
                 <CardMedia
+                  component="img"
                   className={s.cardMedia}
                   image={image}
                   alt={title}
                   title={title}
                 />
-              </CardMedia>
+              </Box>
               <CardContent className={s.cardContent} sx={{ height: 100 }}>
                 <Typography className={s.cardTitle} variant="h6" component="h3">
                   {title}

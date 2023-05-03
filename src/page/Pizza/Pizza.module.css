@@ -1,5 +1,9 @@
-@media screen and (min-width: 1280px) {
-div.pizzaListContainer{
-    max-width: 80%;
+.pizzaListContainer {
+  margin-bottom: 20px;
 }
+
+@media screen and (min-width: 1280px) {
+  div.pizzaListContainer {
+    max-width: 80%;
+  }
 }
