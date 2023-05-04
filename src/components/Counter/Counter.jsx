@@ -35,14 +35,24 @@ function Counter({ id }) {
     <Box className={s.counterBox}>
       {quantity > 0 ? (
         <Box className={s.counterButtonBox}>
-          <Button onClick={handleDecrement}>-</Button>
+          <Button onClick={handleDecrement} aria-label="Reduce Quantity">
+            -
+          </Button>
           <span>{quantity}</span>
-          <Button onClick={handleIncrement}>+</Button>
+          <Button onClick={handleIncrement} aria-label="Increase Quantity">
+            +
+          </Button>
         </Box>
       ) : (
-        <Button onClick={handleIncrement}>Add to Cart</Button>
+        <Button onClick={handleIncrement} aria-label="Add to Cart">
+          Add to Cart
+        </Button>
       )}
-      {canRemove && <Button onClick={handleRemove}>Remove</Button>}
+      {canRemove && (
+        <Button onClick={handleRemove} aria-label="Remove from Cart">
+          Remove
+        </Button>
+      )}
     </Box>
   );
 }
