@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import PropTypes from "prop-types";
 
 import { Box } from "@mui/material";
 
@@ -58,5 +59,9 @@ function Counter({ id }) {
     </Box>
   );
 }
+
+Counter.propTypes = {
+  id: PropTypes.number.isRequired,
+};
 
 export default Counter;

@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 
 import { Box, Container, Grid, Typography } from "@mui/material";
 
@@ -44,3 +46,15 @@ export default function CartPage() {
     </Container>
   );
 }
+
+CartPage.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  randomPizzaImage: PropTypes.string.isRequired,
+  cart: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+CartPage.defaultProps = {
+  isLoading: false,
+  randomPizzaImage: "",
+  cart: [],
+};

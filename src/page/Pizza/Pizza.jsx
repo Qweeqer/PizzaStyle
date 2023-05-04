@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { Container, Grid } from "@mui/material";
+import PropTypes from "prop-types";
 
 import PizzaItem from "../../components/PizzaItem/PizzaItem";
 import CenteredTitleImage from "../../components/CenteredTitleImage/CenteredTitleImage";
@@ -18,3 +19,15 @@ export default function Pizzas() {
     </>
   );
 }
+
+PizzaItem.propTypes = {
+  pizzas: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

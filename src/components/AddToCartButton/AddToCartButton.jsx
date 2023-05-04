@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { Box } from "@mui/material";
+import PropTypes from "prop-types";
 
 import { addToCart } from "../../redux/pizzaSlice";
 import Button from "../Button/Button";
@@ -16,5 +17,9 @@ function AddToCartButton({ id }) {
     </Box>
   );
 }
+
+AddToCartButton.propTypes = {
+  id: PropTypes.number.isRequired,
+};
 
 export default AddToCartButton;
