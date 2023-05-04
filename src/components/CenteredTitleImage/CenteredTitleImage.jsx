@@ -18,7 +18,7 @@ const CenteredTitleImage = () => {
   };
 
   const backgroundStyle = isLoading
-    ? { backgroundColor: "rgba(255, 255, 255, 0.3)" }
+    ? { backgroundColor: "rgba(168,255,147,255)" }
     : { background: `url(${backgroundImage}) center center/cover no-repeat` };
   
   return (
