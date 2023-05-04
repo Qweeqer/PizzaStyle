@@ -15,7 +15,7 @@ import useAdjustMarginTop from "../../helpers/hooks/useAdjustMarginTop";
 import Counter from "../Counter/Counter";
 import s from "./CartList.module.css";
 
-function Cart() {
+function CartList() {
   const cart = useSelector((state) => state.pizzaStyle.cart);
 
   const cartListBoxRef = useRef(null);
@@ -68,4 +68,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartList;
