@@ -1,6 +1,5 @@
-import AddToCartButton from "../AddToCartButton/AddToCartButton";
-import Counter from "../Counter/Counter";
 import { useSelector } from "react-redux";
+
 import {
   Card,
   CardMedia,
@@ -9,6 +8,9 @@ import {
   Typography,
   Box,
 } from "@mui/material";
+
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
+import Counter from "../Counter/Counter";
 import s from "./PizzaItem.module.css";
 
 export default function PizzaItem({ pizzas }) {

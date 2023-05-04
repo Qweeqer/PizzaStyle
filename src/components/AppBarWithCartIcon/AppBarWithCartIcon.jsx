@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-
 import { useSelector } from "react-redux";
 import { NavLink, Outlet } from "react-router-dom";
+
 import { AppBar, Badge, Typography, Box } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
 

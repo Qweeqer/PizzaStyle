@@ -1,8 +1,11 @@
-import { makeOrder } from "../../redux/pizzaSlice";
-import { Box, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
+
+import { Box, Typography } from "@mui/material";
+
+import { makeOrder } from "../../redux/pizzaSlice";
 import Button from "../Button/Button";
 import s from "./MakeOrder.module.css";
+
 export default function MakeOrder() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.pizzaStyle.cart);

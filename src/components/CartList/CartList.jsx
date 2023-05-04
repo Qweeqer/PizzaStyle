@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import Counter from "../Counter/Counter";
 import { useSelector } from "react-redux";
+
 import {
   Card,
   CardMedia,
@@ -10,6 +10,8 @@ import {
   Box,
   Container,
 } from "@mui/material";
+
+import Counter from "../Counter/Counter";
 import s from "./CartList.module.css";
 
 function Cart() {

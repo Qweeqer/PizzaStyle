@@ -1,7 +1,8 @@
 import { useDispatch } from "react-redux";
+import { Box } from "@mui/material";
+
 import { addToCart } from "../../redux/pizzaSlice";
 import Button from "../Button/Button";
-import { Box } from "@mui/material";
 import s from "./AddToCartButton.module.css";
 
 function AddToCartButton({ id }) {

@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
+
 import { Box } from "@mui/material";
+
 import { addToCart, remove, removeFromCart } from "../../redux/pizzaSlice";
 import Button from "../Button/Button";
 import s from "./Counter.module.css";

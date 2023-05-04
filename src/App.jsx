@@ -1,7 +1,6 @@
 import React from "react";
+
 import PagesRoutes from "./PagesRoutes/PagesRoutes";
-
-
 
 const App = () => {
   return (

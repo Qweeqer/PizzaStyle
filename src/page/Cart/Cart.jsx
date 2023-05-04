@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 import { Container, Grid, Typography } from "@mui/material";
 
 import CartList from "../../components/CartList/CartList";
 import MakeOrder from "../../components/MakeOrder/MakeOrder";
 import s from "./Cart.module.css";
+
 export default function CartPage() {
   const cart = useSelector((state) => state.pizzaStyle.cart);
 

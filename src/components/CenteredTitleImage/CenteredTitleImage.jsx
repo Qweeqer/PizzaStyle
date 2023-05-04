@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+
 import { Box, Typography } from "@mui/material";
 
 import backgroundImage from "../../images/backgroundImage.jpg";

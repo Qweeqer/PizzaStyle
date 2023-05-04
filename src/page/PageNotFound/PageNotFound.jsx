@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
+import { Box } from "@mui/material";
+
 import Button from "../../components/Button/Button";
 import s from "./PageNotFound.module.css";
-import { Box } from "@mui/material";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
