@@ -16,7 +16,7 @@
   width: 100%;
   transition: transform 0.3s ease-in-out;
 }
-.cardMedia:hover {
+.card:hover>.imageContainer>.cardMedia {
   transform: scale(1.05);
 }
 h3.cardTitle {
