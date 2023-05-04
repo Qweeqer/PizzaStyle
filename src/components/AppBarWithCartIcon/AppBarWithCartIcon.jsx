@@ -29,20 +29,9 @@ export default function AppBarWithCartIcon() {
     };
   }, []);
 
-
   return (
     <>
-      <AppBar
-        className={s.appBar}
-        position="static"
-        sx={{
-          marginBottom: "0px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          flexDirection: "row",
-        }}
-      >
+      <AppBar className={s.appBar}>
         <Box
           className={s.appBarBox}
           sx={{
