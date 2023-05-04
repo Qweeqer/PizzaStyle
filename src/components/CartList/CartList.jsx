@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useSelector } from "react-redux";
 
 import {
@@ -11,6 +11,7 @@ import {
   Container,
 } from "@mui/material";
 
+import useAdjustMarginTop from "../../helpers/hooks/useAdjustMarginTop";
 import Counter from "../Counter/Counter";
 import s from "./CartList.module.css";
 
@@ -18,14 +19,7 @@ function Cart() {
   const cart = useSelector((state) => state.pizzaStyle.cart);
 
   const cartListBoxRef = useRef(null);
-
-  useEffect(() => {
-    const header = document.querySelector("header");
-    if (header && cartListBoxRef.current) {
-      const headerHeight = header.offsetHeight;
-      cartListBoxRef.current.style.marginTop = `calc(${headerHeight}px + 0rem)`;
-    }
-  }, []);
+  useAdjustMarginTop(cartListBoxRef, "header");
 
   return (
     <Container ref={cartListBoxRef}>

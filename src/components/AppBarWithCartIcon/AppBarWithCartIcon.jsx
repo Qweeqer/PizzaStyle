@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { NavLink, Outlet } from "react-router-dom";
 
 import { AppBar, Badge, Typography, Box } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
 
+import useWindowWidth from "../../helpers/hooks/useWindowWidth";
 import Logo from "../Logo/Logo";
 import s from "./AppBarWithCartIcon.module.css";
 
@@ -16,18 +16,7 @@ export default function AppBarWithCartIcon() {
     0
   );
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const windowWidth = useWindowWidth();
 
   return (
     <>

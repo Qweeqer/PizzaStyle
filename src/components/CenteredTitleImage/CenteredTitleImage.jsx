@@ -1,22 +1,15 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 import { Box, Typography } from "@mui/material";
 
+import useAdjustMarginTop from "../../helpers/hooks/useAdjustMarginTop";
 import backgroundImage from "../../images/backgroundImage.jpg";
 import s from "./CenteredTitleImage.module.css";
 
 const CenteredTitleImage = () => {
-
   const heroBoxRef = useRef(null);
 
-  useEffect(() => {
-    const header = document.querySelector("header");
-    console.log('header', header); //null
-    if (header && heroBoxRef.current) {
-      const headerHeight = header.offsetHeight;
-      heroBoxRef.current.style.marginTop = `calc(${headerHeight}px + 0rem)`;
-    }
-  }, []);
+  useAdjustMarginTop(heroBoxRef, "header");
 
   return (
     <Box
