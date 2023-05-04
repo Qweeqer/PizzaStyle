@@ -5,6 +5,7 @@ import { AppBar, Badge, Typography, Box } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
 
 import useWindowWidth from "../../helpers/hooks/useWindowWidth";
+
 import Logo from "../Logo/Logo";
 import s from "./AppBarWithCartIcon.module.css";
 
