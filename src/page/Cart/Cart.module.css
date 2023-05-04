@@ -1,16 +1,43 @@
-.cartContainer{
-    margin-top: 20px;
+div.cartContainer {
+  padding: 0px;
+  max-width: 100%;
 }
-a.linkToHome{
-    color: #1976d2;
-    transition: color 0.5s ease;
+.cartBox {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
-a.linkToHome:hover{
-    color: yellow;
-    transition: color 0.5s ease;
+h1.cartTitle {
+  max-width: 95%;
+  position: relative;
+  z-index: 1;
+  color: #1976d2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  border-radius: 10px;
 }
+a.linkToHome {
+  color: #1ac444;
+  transition: color 0.5s ease;
+}
+a.linkToHome:hover {
+  color: yellow;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
 @media screen and (min-width: 1280px) {
-div.cartContainer{
-    max-width: 80%;
-}
+  div.cartContainer {
+    max-width: 100%;
+  }
 }
