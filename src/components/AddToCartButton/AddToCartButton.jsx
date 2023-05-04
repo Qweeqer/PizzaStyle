@@ -9,7 +9,9 @@ function AddToCartButton({ id }) {
   const add = () => dispatch(addToCart(id));
   return (
     <Box className={s.addToCartBox}>
-      <Button onClick={add}>Add to cart</Button>
+      <Button onClick={add} aria-label="Add to Cart">
+        Add to cart
+      </Button>
     </Box>
   );
 }

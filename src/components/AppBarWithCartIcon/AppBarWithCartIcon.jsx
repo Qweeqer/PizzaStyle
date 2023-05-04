@@ -41,6 +41,7 @@ const totalSum = cart.reduce(
             className={({ isActive }) => (isActive ? s.activeLink : s.link)}
             exact="true"
             to="/"
+            aria-label="Home page PizzaStyle"
           >
             <Typography className={s.logoTitle} variant="p" body1="span">
               PizzaStyle
@@ -52,10 +53,11 @@ const totalSum = cart.reduce(
           className={({ isActive }) => (isActive ? s.activeLink : s.link)}
           to="/cart"
           style={{ marginRight: "20px" }}
+          aria-label="Cart page"
         >
           <Typography>
             <Badge className={s.badge} color="secondary" badgeContent={cartSum}>
-              <ShoppingCart className={s.cartIcon} />
+              <ShoppingCart className={s.cartIcon} aria-label="Cart icon" />
               <Typography variant="p" body1="span" className={s.cartSum}>
                 <Typography
                   variant="p"

@@ -29,6 +29,7 @@ export default function MakeOrder() {
           color="primary"
           onClick={handleMakeOrder}
           disabled={!canMakeOrder}
+          aria-label="Make an order button"
         >
           Make an order
         </Button>

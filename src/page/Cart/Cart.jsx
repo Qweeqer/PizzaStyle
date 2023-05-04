@@ -13,7 +13,7 @@ export default function CartPage() {
       {cart.length === 0 ? (
         <Typography variant="h3" align="center">
           Please, choose pizza{" "}
-          <Link to="/" className={s.linkToHome}>
+          <Link to="/" className={s.linkToHome} aria-label="Go to main page">
             here
           </Link>
         </Typography>
