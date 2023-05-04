@@ -13,7 +13,6 @@ const PagesRoutes = () => {
       <Routes>
         <Route path="/" element={<Pizzas />} />
         <Route path="/cart" element={<Cart />} />
-        {/* <Route path="*" element={<Navigate to="/" />} /> */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Suspense>
