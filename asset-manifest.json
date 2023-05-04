@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/PizzaStyle/static/css/main.df61f475.css",
-    "main.js": "/PizzaStyle/static/js/main.29652acf.js",
-    "static/css/855.1e417cbb.chunk.css": "/PizzaStyle/static/css/855.1e417cbb.chunk.css",
-    "static/js/855.8b4ac8f5.chunk.js": "/PizzaStyle/static/js/855.8b4ac8f5.chunk.js",
-    "static/css/392.5bb286dc.chunk.css": "/PizzaStyle/static/css/392.5bb286dc.chunk.css",
-    "static/js/392.e13f0559.chunk.js": "/PizzaStyle/static/js/392.e13f0559.chunk.js",
+    "main.js": "/PizzaStyle/static/js/main.6d005eef.js",
+    "static/css/189.39695b53.chunk.css": "/PizzaStyle/static/css/189.39695b53.chunk.css",
+    "static/js/189.01011f11.chunk.js": "/PizzaStyle/static/js/189.01011f11.chunk.js",
+    "static/css/392.6aa589af.chunk.css": "/PizzaStyle/static/css/392.6aa589af.chunk.css",
+    "static/js/392.64496ad4.chunk.js": "/PizzaStyle/static/js/392.64496ad4.chunk.js",
     "static/css/921.223652ec.chunk.css": "/PizzaStyle/static/css/921.223652ec.chunk.css",
     "static/js/921.e9ebae94.chunk.js": "/PizzaStyle/static/js/921.e9ebae94.chunk.js",
     "static/js/344.f2abfdd1.chunk.js": "/PizzaStyle/static/js/344.f2abfdd1.chunk.js",
@@ -13,17 +13,17 @@
     "static/media/logopizza.jpg": "/PizzaStyle/static/media/logopizza.a4110bf9b846d8aef904.jpg",
     "index.html": "/PizzaStyle/index.html",
     "main.df61f475.css.map": "/PizzaStyle/static/css/main.df61f475.css.map",
-    "main.29652acf.js.map": "/PizzaStyle/static/js/main.29652acf.js.map",
-    "855.1e417cbb.chunk.css.map": "/PizzaStyle/static/css/855.1e417cbb.chunk.css.map",
-    "855.8b4ac8f5.chunk.js.map": "/PizzaStyle/static/js/855.8b4ac8f5.chunk.js.map",
-    "392.5bb286dc.chunk.css.map": "/PizzaStyle/static/css/392.5bb286dc.chunk.css.map",
-    "392.e13f0559.chunk.js.map": "/PizzaStyle/static/js/392.e13f0559.chunk.js.map",
+    "main.6d005eef.js.map": "/PizzaStyle/static/js/main.6d005eef.js.map",
+    "189.39695b53.chunk.css.map": "/PizzaStyle/static/css/189.39695b53.chunk.css.map",
+    "189.01011f11.chunk.js.map": "/PizzaStyle/static/js/189.01011f11.chunk.js.map",
+    "392.6aa589af.chunk.css.map": "/PizzaStyle/static/css/392.6aa589af.chunk.css.map",
+    "392.64496ad4.chunk.js.map": "/PizzaStyle/static/js/392.64496ad4.chunk.js.map",
     "921.223652ec.chunk.css.map": "/PizzaStyle/static/css/921.223652ec.chunk.css.map",
     "921.e9ebae94.chunk.js.map": "/PizzaStyle/static/js/921.e9ebae94.chunk.js.map",
     "344.f2abfdd1.chunk.js.map": "/PizzaStyle/static/js/344.f2abfdd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df61f475.css",
-    "static/js/main.29652acf.js"
+    "static/js/main.6d005eef.js"
   ]
 }
