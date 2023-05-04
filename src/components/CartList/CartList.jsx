@@ -19,6 +19,7 @@ function Cart() {
         <Card className={s.card}>
           <Box className={s.imageContainer}>
             <CardMedia
+              loading="lazy"
               component="img"
               className={s.cardMedia}
               image={image}
