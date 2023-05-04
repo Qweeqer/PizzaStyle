@@ -27,19 +27,22 @@ function Cart() {
               title={title}
             />
           </Box>
-          <CardContent className={s.cardContent} sx={{ height: 100 }}>
-            <Typography className={s.cardTitle} variant="h6" component="h3">
-              {title}
-            </Typography>
-            <Typography className={s.description} variant="body2">
-              {description}
-            </Typography>
-            <Typography className={s.description} variant="body1">
-              Total price for {quantity} pizzas: {price * quantity} UAH
-            </Typography>
-          </CardContent>
-          <Box className={s.cardActions}>
-            <Counter id={id} />
+          <Box className={s.contentCardBox}>
+            <CardContent className={s.cardContent} >
+              <Typography className={s.cardTitle} variant="h6" component="h3">
+                {title}
+              </Typography>
+              <Typography className={s.description} variant="body2">
+                {description}
+              </Typography>
+              <Typography className={s.description} variant="body1">
+                Total price for {quantity} pizzas: {price * quantity} UAH
+              </Typography>
+            </CardContent>
+
+            <Box className={s.cardActions}>
+              <Counter id={id} />
+            </Box>
           </Box>
         </Card>
       </Grid>

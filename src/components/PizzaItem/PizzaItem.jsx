@@ -7,7 +7,6 @@ import {
   Grid,
   CardContent,
   Typography,
-  CardActions,
   Box,
 } from "@mui/material";
 import s from "./PizzaItem.module.css";
@@ -31,20 +30,26 @@ export default function PizzaItem({ pizzas }) {
                   title={title}
                 />
               </Box>
-              <CardContent className={s.cardContent} sx={{ height: 100 }}>
-                <Typography className={s.cardTitle} variant="h6" component="h3">
-                  {title}
-                </Typography>
-                <Typography className={s.description} variant="body2">
-                  {description}
-                </Typography>
-                <Typography className={s.description} variant="body1">
-                  Price: {price} UAH
-                </Typography>
-              </CardContent>
-              <CardActions className={s.cardActions}>
-                {isInCart ? <Counter id={id} /> : <AddToCartButton id={id} />}
-              </CardActions>
+              <Box className={s.contentCardBox}>
+                <CardContent className={s.cardContent}>
+                  <Typography
+                    className={s.cardTitle}
+                    variant="h6"
+                    component="h3"
+                  >
+                    {title}
+                  </Typography>
+                  <Typography className={s.description} variant="body2">
+                    {description}
+                  </Typography>
+                  <Typography className={s.description} variant="body1">
+                    Price: {price} UAH
+                  </Typography>
+                </CardContent>
+                <Box className={s.cardActions}>
+                  {isInCart ? <Counter id={id} /> : <AddToCartButton id={id} />}
+                </Box>
+              </Box>
             </Card>
           </Grid>
         );
